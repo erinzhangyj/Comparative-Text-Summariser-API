@@ -55,9 +55,9 @@ $ python app.py
 # App Screenshots
 ##### 1. Home page
 
-![Home Page](https://i.imgur.com/xjR2YRA.png)
+![Home Page](https://i.imgur.com/DHVNcDr.png)
 
 ##### 2. Results page
-![Results Page](https://i.imgur.com/7C0No8l.png)
+![Results Page](https://i.imgur.com/xvq0aV7.png)
 
 
