@@ -1,0 +1,68 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comparative Text Summariser</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+</head>
+<body>
+
+<section class="hero is-medium is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title has-text-centered">
+        Comparative Text Summariser
+      </h1>
+      <h2 class="subtitle has-text-centered">
+        <i>Compare summaries of texts from any url</i>
+      </h2>
+    </div>
+  </div>
+</section>
+
+  <section class="hero-is-medium is-fullheight-with-navbar">
+    <div class="hero-head">
+      <div class="container">
+
+          {% block heading %}{% endblock %}
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+          <article class="message is-centered" style="width: 500px; margin: auto;">
+            <div class="message-body">
+              {% for msg in messages %}
+                <p>{{ msg }}</p>
+              {% endfor %}
+            </div>
+          </article>
+          {% endif %}
+        {% endwith %}
+        
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+    
+        {% block main %}{% endblock %}
+    
+      </div>
+    </div>
+<br><br><br><br><br><br>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Comparative Text Summariser</strong> by
+      <a href="https://github.com/erinzhangyj"> Erin Yijie Zhang</a>.
+    </p>
+  </div>
+</footer>
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block main %}
+
+<br><br><br><br>
+
+   <div>
+   <p class="subtitle has-text-centered"><b>What is the URL?</b></p>
+
+  <div class="columns">
+    <div class="column is-offset 2-is-8">
+      <form action="{{ url_for('results') }}" method="POST">
+        <div class="field has-addons has-addons-centered">
+          <div class="control is-expanded">
+            <input type="text" name="url" class="input" placeholder="https://example.com">
+          </div>
+          <div class="control">
+            <button class="button is-dark">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

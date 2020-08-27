@@ -1,0 +1,32 @@
+<!-- results.html -->
+{% extends 'base.html' %}
+
+{% block main %}
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Comparative Summary Results</h1>
+      <br>
+      <h1 class="subtitle has-text-centered"><b>NLTK Summary Results:</b></h1>
+      <p class="subtitle has-text-centered is-size-6"> {{ nltk_summary }}</p>
+
+      <h1 class="subtitle has-text-centered"><b>Gensim Summary Results:</b></h1>
+      <p class="subtitle has-text-centered is-size-6"> {{ gensim_summary }}</p>
+      <br>
+    </div>
+
+    <div style="text-align: center;">
+      <button class="button is-dark" onclick="goBack()">Try Another URL</button>
+      <script>
+      function goBack() {
+      window.history.back();
+      }
+      </script>
+    </div>
+
+  </section>
+</body>
+
+
+{% endblock %}
