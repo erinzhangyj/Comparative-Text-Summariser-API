@@ -2,7 +2,7 @@
 
 # Introduction
 
-A comparative extractive text summariser web API implemented in Flask and styled with Bulma CSS. The text summariser will extract a webpage, parse it, and produce summaries using the NLTK and Gensim libraries for comparative purposes. 
+A comparative extractive text summariser implemented in Flask and styled with Bulma CSS. The API will parse text from a webpage and prepare two sets of summaries using the NLTK and Gensim libraries for comparative purposes. 
 
 # Implementation
  
@@ -55,9 +55,9 @@ $ python app.py
 # App Screenshots
 ##### 1. Home page
 
-![Home Page](https://i.imgur.com/KV5gcye.png)
+![Home Page](https://i.imgur.com/xjR2YRA.png))
 
 ##### 2. Results page
-![Results Page](https://i.imgur.com/TAovJ3y.png)
+![Results Page](https://i.imgur.com/7C0No8l.png)
 
 
